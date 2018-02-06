@@ -1,12 +1,12 @@
 {
-    "name": "andrewelkins/cabinet",
+    "name": "31ten/cabinet",
     "description": "Laravel 4 file upload package.",
     "keywords": ["laravel","illuminate","file","uploads","jquery", "js"],
     "license": "MIT",
     "authors": [
         {
             "name": "Andrew Elkins",
-            "homepage": "http://andrewelkins.com"
+            "homepage": "http://31ten.network"
         }
     ],
     "require": {
