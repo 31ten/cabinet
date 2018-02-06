@@ -5,7 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Andrew Elkins",
+            "name": "31 Ten",
             "homepage": "http://31ten.network"
         }
     ],
@@ -22,11 +22,25 @@
         "nesbot/carbon": "1.*",
         "bllim/datatables": "*",
         "intervention/image": "2.0.x"
-},
+    },
     "suggest": {
         "zizaco/confide":"add Easy User management to Laravel 4",
         "zizaco/entrust":"add Role-based Permissions to Laravel 4"
     },
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+              "name": "31ten/cabinet",
+              "version":"master",
+              "source": {
+                  "url": "https://github.com:31ten/cabinet.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        }
+    ],
     "autoload": {
         "classmap": [
             "src/migrations",
