@@ -46,14 +46,14 @@ class CabinetUpload extends Eloquent
             static::$app = app();
     }
     
-    public function process(UploadedFile $file, $user_id=null)
+    public function process(UploadedFile $file, $userId=null)
     {
         // File extension
         $this->extension = $file->getClientOriginalExtension();
         // Mimetype for the file
         $this->mimetype = $file->getMimeType();
-        // Current user or 0
-        $this->user_id = ($user_id ? $user_id : Auth::user() ? Auth::user()->id : 0);
+
+        $this->user_id = ( $userId ? $userId : (Auth::user() ? Auth::user()->id : 0));
 
         $this->size = $file->getSize();
 
